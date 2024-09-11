@@ -1,0 +1,12 @@
+print ("Welcome to the space travel calculator")
+
+def calculator (distance, speed):
+  return (distance / speed)
+
+def travel_calculator():
+  distance = int(input("How far away is your destination (in light-years)?"))
+  speed = float(input("What is the speed of your spaceship(as a fraction of the speed of light)?"))
+  time = calculator(distance, speed)
+  print("It will take you " + str(time) + " years to get to your destination. ")
+
+travel_calculator()
